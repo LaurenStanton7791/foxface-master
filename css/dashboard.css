@@ -28,6 +28,11 @@ a {
  font-style: none;
 }
 
+h1 {
+font-size: 200%;
+font-weight: 300;
+}
+
 .second-nav {
   display: inline-flex;
 }
@@ -35,6 +40,7 @@ a {
 .icons {
   width: 20px;
   height: 25px; 
+  padding: 5px; 
 }
 
 .unit {
@@ -70,8 +76,9 @@ a {
 }
 
 .list-item {
+  border: solid 1px lightgrey;
   border-radius: 50px;
-  background-color: #00a3e0;
+  background-color: #262B2F;
   color: white;
   padding: 10px 10px 10px 10px;
   margin: 15px;
@@ -87,7 +94,8 @@ a {
 
 .card-item {
   border-radius: 50px;
-  background-color: #ffc845;
+  border: solid 1px lightgrey;
+  background-color: #262B2F;
   color: white;
   padding: 10px 10px 10px 10px;
   margin: 15px;
@@ -123,12 +131,10 @@ button {
 
   .sidenav__list {
     padding: 0;
-    list-style-type: none;
-    text-align: center; 
+    list-style-type: none; 
   }
 
   .sidenav__list-item {
-    padding: 20px 20px 20px 40px;
     color: rgb(255, 255, 255);
   }
 
