@@ -78,7 +78,7 @@ font-weight: 300;
 .list-item {
   border: solid 1px lightgrey;
   border-radius: 50px;
-  background-color: #262B2F;
+  background: linear-gradient(45deg, #00A3E0, #84BD00);
   color: white;
   padding: 10px 10px 10px 10px;
   margin: 15px;
