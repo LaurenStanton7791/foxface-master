@@ -53,7 +53,7 @@ font-weight: 300;
 }
 
 .foxface-logo {
-  margin-left: 45px;
+  margin-left: 5px;
   margin-top: 10px;
   margin-bottom: 50px; 
   border-radius: 21px;
@@ -76,7 +76,6 @@ font-weight: 300;
 }
 
 .list-item {
-  border: solid 1px lightgrey;
   border-radius: 50px;
   background: linear-gradient(45deg, #00A3E0, #84BD00);
   color: white;
@@ -94,8 +93,7 @@ font-weight: 300;
 
 .card-item {
   border-radius: 50px;
-  border: solid 1px lightgrey;
-  background-color: #262B2F;
+  background-color: #ffc845;
   color: white;
   padding: 10px 10px 10px 10px;
   margin: 15px;
