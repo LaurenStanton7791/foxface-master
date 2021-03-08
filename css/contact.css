@@ -1,0 +1,255 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(0, 0, 0); 
+    margin: 0 auto; 
+    text-align: center; 
+}
+
+header {
+    background-color: #3F4443; 
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    padding: 20px 20px;
+    text-align: center; 
+    font-size: 2.5em; 
+}
+.logo {
+    width: 200px; 
+    height: 200px; 
+}
+
+    
+.headline {
+    text-align: center; 
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+
+.tagline {
+    color: #3F4443; 
+    font-size: 2em; 
+}
+form {
+    background-color: #3F4443;
+    text-align: left;
+    box-shadow: 10px 12px 0.5rem rgba(0,0,0,0.5);
+}
+
+
+
+h2 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+h3 {
+    color:  #00A3E0;
+    text-transform: uppercase;
+}
+
+.container {
+    margin: 0 auto; 
+}
+
+p {
+    padding-top: 0;
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+}
+li {
+    list-style: none;
+    padding: 10px 10px; 
+}
+label {
+    color: white; 
+}
+
+fieldset {
+    border: none;
+}
+
+.second {
+    width: 95%;
+    border: solid 1px white;
+    margin-top: 15px; 
+    margin-bottom: 15px;
+}
+
+.slot {
+    height: 50px;
+    padding: 10px;
+    width: 100%;
+    background-color: white;
+    border: none;
+    margin-top: 6px; 
+    margin-bottom: 14px;
+
+}
+
+.info {
+    color: #3F4443; 
+}
+
+
+.line {
+    width: 95%;
+}
+.newsletter {
+    color: white;
+}
+.lastline {
+    width: 95%;
+    border: solid 1px white;
+}
+
+input,
+select {
+    padding: 15px; 
+    transition-property: width;
+    transition-delay:.3s ;
+    transition-duration: .5s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    border: 2px solid #000000; 
+    transition: 0.5s; 
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin: 10px 7px; 
+}
+
+
+
+input[type="submit"] {
+    background-color:  #00A3E0;
+    color: white;
+    border: none;
+    width: 100%;
+    font-size: 1em;
+    margin: auto; 
+    margin-bottom: 14px;
+    text-transform: uppercase; 
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #84BD00;  
+}
+
+textarea {
+     background-color: white; 
+     margin-top: 3%;
+     margin-bottom: 3%;
+     border-radius: 5px;
+     border: none;
+     width: 100%;
+     height: 200px;
+} 
+ 
+::placeholder {
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    color: gray;
+}
+
+select {
+    font-family:'Montserrat', sans-serif;
+    color: gray;
+}
+
+#zip {
+    width: 55%
+}
+
+/* Footer */
+
+.copyright {
+    text-align: center;
+    font-size: .95em;
+    color:rgb(0, 0, 0);
+    margin-top: 15%;
+}
+
+/*Media Queries*/
+
+@media(min-width: 768px) {
+form,
+.second { 
+    margin-left: auto;
+    margin-right: auto;
+    float: right;
+}
+
+.second-headline {
+    float:left; 
+    width: 50%; 
+    text-align: left; 
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.topsection {
+
+    width:100%;
+    display:block;
+  
+}
+
+.container {
+    max-width: 1250px; 
+}
+
+.column {
+    width:100%;
+    align-items: baseline;
+    display: flex;
+    
+}
+
+.slot {
+    height: 50px;
+    padding: 10px;
+    width: 75%;
+    background-color: white;
+    border: none;
+    margin-top: 6px; 
+    margin-left: 10px;
+    margin-bottom: 14px;
+
+}
+
+
+.questionaire {
+    width:30%;
+    padding-top: 10px;
+    font-size: 1em;
+}
+
+
+
+.info {
+    padding-top: 15px;
+    font-size: 1.75em;
+}
+
+
+
+input[type="submit"] { 
+    width: 100%;
+}
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+}
