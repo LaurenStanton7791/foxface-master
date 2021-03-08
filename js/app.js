@@ -1,63 +1,20 @@
-var trafficWeeklyChart = document.getElementById("traffic_weekly");
-  var trafficWeekly = new Chart(trafficWeeklyChart, {
-      options: {
-          legend: {
-              display: false
-          }
-      },
-      type: 'line',
-      data: {
-          labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", "4-10", "11-7", "18-24", "25-31"],
-          datasets: [{
-              data: [750, 1250, 1350, 1550, 1300, 1550, 1950, 1700, 2100, 1750, 2250],
-              borderColor: [
-                  '#7379bd'
-              ],
-              backgroundColor: '#e2e3f5',
-              borderWidth: 1,
-              lineTension: 0,
-              pointStyle: 'circle'
-          }],
-      }
-  });
-
-  var trafficDailyChart = document.getElementById("traffic_daily");
-  var trafficDaily = new Chart(trafficDailyChart, {
-      options: {
-          legend: {
-              display: false
-          }
-      },
-      type: 'bar',
-      data: {
-          labels: ["S", "M", "T", "W", "Th", "F", "S"],
-          datasets: [{
-              data: [75, 150, 130, 150, 130, 200, 220],
-              borderColor: [
-                  '#4d4d71'
-              ],
-              backgroundColor: '#4d4d71',
-              borderWidth: 0,
-              borderRadius: 5,
-              lineTension: 0,
-              pointStyle: 'circle'
-          }],
-      }
-  });
-
-  var mobileUsersChart = document.getElementById("mobile_users");
-  var mobileUsers = new Chart(mobileUsersChart, {
+var mobileRecertsChart = document.getElementById("recerts");
+  var mobileRecerts = new Chart(mobileRecertsChart, {
       type: 'doughnut',
       data: {
-          labels: ["Phones", "Tablets", "Desktops"],
+          labels: ["-30 Days", "< 30 Days", "31-60 Days", "61-90 Days"],
           datasets: [{
-              data: [18, 17, 65],
+              data: [2, 18, 17, 65],
               backgroundColor: [
-                  '#83c891',
-                  '#76b1be',
-                  '#7379bd'
+                  '#cb4154',
+                  '#ffc845',
+                  '#84bd00',
+                  '#00a3e0'
               ],
-              borderWidth: 1,
+              color: [ 
+                'white'
+              ],
+              borderWidth: 0,
               lineTension: 0,
               pointStyle: 'circle'
           }],
@@ -65,25 +22,11 @@ var trafficWeeklyChart = document.getElementById("traffic_weekly");
       options: {
           responsive: true,
           legend: {
-            position: 'right'
+            position: 'left',
+            color: 'white'
           }
       }    
   });
-
-  function formatDate(date) {
-      var monthNames = [
-          "January", "February", "March",
-          "April", "May", "June", "July",
-          "August", "September", "October",
-          "November", "December"
-      ];
-
-      var day = date.getDate();
-      var monthIndex = date.getMonth();
-      var year = date.getFullYear();
-
-      return day + ' ' + monthNames[monthIndex] + ' ' + year;
-  }
 
   var new_members = {};
   /** get some random users  */
@@ -136,4 +79,4 @@ var trafficWeeklyChart = document.getElementById("traffic_weekly");
   document.querySelectorAll('.alert')[0].addEventListener('click', function(evt){
     evt.preventDefault();
     this.style.display = 'none';
-  });          
+  });                   

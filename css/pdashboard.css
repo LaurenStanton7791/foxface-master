@@ -17,6 +17,7 @@
  
  body {
      color: white;
+     background-color: #262B2F;
      font-family: 'Poppins', sans-serif;
      font-weight: 300;
      margin: 0;
@@ -33,7 +34,6 @@
      color: white;
      display: flex;
      flex-wrap: nowrap;
-     justify-content: space-between;
      position: relative;
      width: 100%;
  }
@@ -72,7 +72,6 @@
  }
  
  .account__notify {
-     border-right: 1px solid #00a3e0;
      margin-right: 0.5em;
      padding: 0.75em;
      position: relative;
@@ -95,69 +94,13 @@
      width: 7px;
  }
  
- nav {
-     background-color: #262B2F;
- }
- 
- nav ul {
-     list-style-type: none;
-     margin: 0;
- }
- 
- main nav {
-     max-width: 100px;
-     min-width: 40px;
-     text-align: center;
-     width: calc(100% / 12 * 2);
- }
- 
- main nav ul {
-     margin: 0;
-     padding: 0;
- }
- 
- main nav li {
-     display: block;
-     margin: 0.75em 0;
-     padding: 0.5em 0.25em;
-     position: relative;
- }
- 
- main nav li.active:before {
-     background-color: #84bd00;
-     border-left: 3px;
-     border-radius: 3px;
-     content: ' ';
-     left: 0;
-     position: absolute;
-     top: 0;
-     height: 100%;
-     width: 3px;
-     border-top-right-radius: 20px;
-     border-bottom-right-radius: 20px;
- }
- 
- main nav li.active img {
-     opacity: 1;
- }
- 
- main nav li a {
-     display: block;
-     width: 100%;
- }
- 
- main nav li img {
-     max-width: 30px;
-     min-width: 15px;
-     opacity: 0.5;
- }
+
  
  .search {
      border-radius: 5px;
-     border: 1px solid #e4e2e2;
+     border: 1px solid #3f3f3f;
      margin: 1em;
      padding: 0.5rem;
-     position: absolute;
      right: 0;
      width: 40%;
  }
@@ -181,6 +124,51 @@
      right: 14px;
      top: 5px;
  }
+
+ .foxface-logo {
+    margin-bottom: 50px; 
+    margin-left: 40px; 
+    margin-top: 15px; 
+    border-radius: 21px;
+    height: 41px;
+    width: 72px;
+  }
+  
+
+ .sidenav {
+    grid-area: sidenav;
+    background-color: #262B2F;
+    overflow-y: auto;
+    box-shadow: 0px 3px 26px rgb(0 0 0 / 45%);
+    z-index: 2;
+  }
+  
+  .sidenav__list {
+    padding: 0;
+    list-style-type: none;
+    text-align: center; 
+    font-weight: 500; 
+  }
+
+  .sidenav__list-item {
+    padding: 10px 10px 10px 40px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+  }
+
+  li.sidenav__list-item:hover {
+    color:#ffc845;
+    cursor: pointer;
+  }
+
+  .logout {
+    margin-top: 140px;
+    font-size: 18px;
+    font-weight:500;
+    min-height: 30px;
+    min-width: 70px;
+    white-space: nowrap;
+  }
  
  main {
      background-color: #fbfbfb;
@@ -196,8 +184,8 @@
  
  .panel__heading {
      background-color: #262B2F;
+     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
      border-bottom: none;
-     border-right: 1px solid #CCC;
      color: #ffffff;
      display: inline-block;
      font-size: 1rem;
@@ -209,28 +197,26 @@
  
  .panel__main {
      background-color: #262B2F;
-     border-top: 1px solid #ccc;
      margin-top: -1px;
      z-index: 0;
  }
  
  .chart canvas {
      padding: 1em;
+     margin-bottom: 3em;
+     display: block;  
  }
  
  .heading {
      color: rgb(255, 255, 255);
      display: inline-block;
-     font-size: 1em;
-     font-weight: 500;
+     font-size: 22px;
      margin: 1em 0 0 1em;
      padding: 0;
-     text-transform: uppercase;
  }
  
  .chart__menu {
      display: inline-block;
-     float: right;
      line-height: 1.3em;
      list-style-type: none;
      margin: 0;
@@ -239,7 +225,6 @@
  
  .chart__menu li {
      display: inline-block;
-     float: left;
      font-size: 10px;
      padding: 0 0.5em;
  }
@@ -269,9 +254,7 @@
      text-align: left;
  }
  
- .border {
-     border: 1px solid #e4e2e2;
- }
+ 
  
  .border__no-bottom {
      border-bottom: none;
@@ -311,7 +294,6 @@
      border-radius: 100%;
      display: inline-block;
      fill: white;
-     float: left;
      height: 50px;
      margin-right: 0.5em;  
      vertical-align: text-top;
@@ -382,7 +364,7 @@
  }
  
  .block__wrapper strong {
-     color: #333;
+     color: #ffc845;
      font-size: 0.75em;
      font-weight: normal;
  }
@@ -469,7 +451,7 @@
  }
  
  .success {
-     background-color: limegreen;
+     background-color: #84bd00;
      border: 1px solid #ddd;
      color: #fff;
      margin: 1em;
@@ -548,6 +530,7 @@
  
  /** table break point */
  @media (min-width: 769px) {
+     
  
      [class^="col-"] {
          float: left;
@@ -596,9 +579,13 @@
      header h1 {
          padding: 0 1em;
          font-size: 200%;    
-         font-weight: 300;
+         font-weight: 300; 
      }
- 
+
+    .account {
+     margin-left: 600px;
+    }
+
      h1 sup {
          font-size: 1rem;
      }
@@ -663,6 +650,10 @@
  /** desktop break point */
  @media (min-width: 1024px) {
      
+    .account {
+        margin-left: 700px;
+       }
+
      .social svg {
          height: 70px;
          width: 70px;    
